@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vanarts STUDENT MOCK PROJECT SITE</title>
+
+    <link rel="icon" 
+  type="image/png" 
+  href="./assets_event/favcon.png">
+
+  <!-- css-------------------------------------------------------------------------------------------- -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css_event/style.css">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/95b58ad2f6.js" crossorigin="anonymous"></script>
+
+
+
+  <!-- JS -------------------------------------------------------------------------------------------- -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  
+
+  <!-- Google map -->
+  <script type="text/javascript">
+
+    function initMap()
+    {
+      // 1.Defining my lat lang coordinates
+      var mylocation = {
+        lat: 49.272450,
+        lng: -123.095710
+      }
+
+      // 2.Define your map
+      var map = new google.maps.Map(document.getElementById("google-map"), {
+        zoom: 15,
+        center: mylocation
+      });
+
+      // 3.Plot your marker
+      var marker = new google.maps.Marker({
+        position: mylocation,
+        map: map
+      })
+    }
+
+  </script>
+
+</head>
+
+
+
+<body>
+  <div id="home">
+    <header class="page_header"><!-- wrapper -->
+      <nav class="navbar navbar-expand-md wrapper">
+          <div class="container-fluid p-0">
+              <a class="navbar-brand" href="../index.html"><img class="logo" src="./assets_event/logo.svg" alt="Sprites & Selkies Daycare"></a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav main_nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html#covid_container">Covid19 protocol</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../programs/programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../event/event.html">Event</a>
+                    </li>
+                    <li class="nav-item contact_bg">
+                      <a class="nav-link " href="../contact/contact.html">Contact us</a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+  </div><!-- / home -->
+
+  <!-- Hero Image ---------------------------------------------------------------------------------------------- -->
+  <div id="hero_home">
+    <div class="hero_homeContent wrapper">
+      <h2>Our Event</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore autem nulla voluptates magni repellendus.
+      </p>
+    </div>
+  </div>
+
+  <!-- Event ------------------------------------------------------------------------------->
+  <section id="event_wrapper">
+    <div class="wrapper">
+      <div class="welcome_h2">
+        <h2>Annual Event</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event1_img">
+                  <img class="flag" src="./assets_event/Jan.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event2_img">
+                  <img class="flag" src="./assets_event/feb.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event3_img">
+                  <img class="flag" src="./assets_event/Mar.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event4_img">
+                  <img class="flag" src="./assets_event/Apr.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event5_img">
+                  <img class="flag" src="./assets_event/May.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event6_img">
+                  <img class="flag" src="./assets_event/Jun.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event7_img">
+                  <img class="flag" src="./assets_event/Jul.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event8_img">
+                  <img class="flag" src="./assets_event/Aug.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event9_img">
+                  <img class="flag" src="./assets_event/Sep.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event10_img">
+                  <img class="flag" src="./assets_event/Oct.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event11_img">
+                  <img class="flag" src="./assets_event/Nov.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="event_content">
+              <div class="img_wrapper">
+                <div class="event12_img">
+                  <img class="flag" src="./assets_event/Dec.png" alt="">
+                </div>
+              </div>
+              <div class="event_list">
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+                <p><img class="crown" src="./assets_event/crown-solid.svg" alt="">Lorem Ipsum Lorem</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Report ----------------------------------------------------------------------------------------- -->
+  <section id="report_Wrapper">
+    <div class="wrapper">
+      <div class="parents_h2">
+        <h2>Annual Report</h2>
+      </div>
+      <div class="parents_text">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 fadeUpTrigger">
+            <div class="report_content">
+              <div class="img_wrapper">
+                <div class="report_img1"></div>
+              </div>
+              <h3>2020 Annual report</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 fadeUpTrigger">
+            <div class="report_content">
+              <div class="img_wrapper">
+                <div class="report_img2"></div>
+              </div>
+              <h3>2019 Annual report</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 fadeUpTrigger">
+            <div class="report_content">
+              <div class="img_wrapper">
+                <div class="report_img3"></div>
+              </div>
+              <h3>2018 Annual report</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 fadeUpTrigger">
+            <div class="report_content">
+              <div class="img_wrapper">
+                <div class="report_img4"></div>
+              </div>
+              <h3>2017 Annual report</h3>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+    <!-- Contact -------------------------------------------------------------------------------------------------- -->
+    <section id="contact_Wrapper">
+      <div class="contact_h2 fadeUpTrigger">
+        <h2>Contact Us<img class="exclamation" src="./assets_event/exclamation.png" alt=""><img class="exclamation" src="./assets_event/exclamation.png" alt=""></h2>
+      </div>
+      <div class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 fadeUpTrigger">
+              <div class="contact_info">
+                <p>
+                  <img class="crown" src="./assets_event/crown-solid.svg" alt="">Hours : Monday - Friday (7:30 - 16:00)
+                </p>
+                <p>
+                  <img class="crown" src="./assets_event/crown-solid.svg" alt="">Closed : Saturday - Sunday
+                </p>
+                <p>
+                  <img class="crown" src="./assets_event/crown-solid.svg" alt="">Phone Number : 111-222-3333
+                </p>
+                <p>
+                  <img class="crown" src="./assets_event/crown-solid.svg" alt="">Email : dammy@dammy.com
+                </p>
+                <p>
+                  <img class="crown" src="./assets_event/crown-solid.svg" alt="">Adress : 400-333 Terminal Avenue,Vancouver, BC Canada V6A 4C1
+                </p>
+              </div>
+              <div class="btn_wrapper">
+                <a href="../contact/contact.html" class="shine">Contact us</a>
+              </div>
+            </div>
+  
+            <div class="col-md-6 fadeUpTrigger"><!-- map -->
+              <section class="map">
+                <div id ="google-map"></div>
+              </section>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Footer -------------------------------------------------------------------------------------------------- -->
+  <footer id="footer_Wrapper">
+    <div class="wrapper">
+      <div class="logo_wrapper">
+        <a href="../index.html"><img class="logo" src="./assets_event/logo.svg" alt="Sprites & Selkies Daycare"></a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item_wrapper">
+              <h4 class="pageTitle"><a href="../programs/programs.html">Programs</a></h4>
+              <div class="page_name"><a href="../programs/programs.html#education_Wrapper">Early Education</a></div>
+              <div class="page_name"><a href="../programs/programs.html#morning_Wrapper">Morning Programs<br>(All day program/AM)</a></div>
+              <div class="page_name"><a href="../programs/programs.html#afternoon_Wrapper">Afternoon Programs<br>(All day program/PM)</a></div>
+              <div class="page_name"><a href="../programs/programs.html#fee_values_wrapper">Fees & Values</a></div>
+              <div class="page_name"><a href="../programs/programs.html#Process_wrapper">Pcosecc of registration of Programs</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item_wrapper about">
+              <h4 class="pageTitle"><a href="../about/about.html">About</a></h4>
+              <div class="page_name"><a href="../about/about.html#staff_Wrapper">Our Staff</a></div>
+              <div class="page_name"><a href="../about/about.html#history_Wrapper">History</a></div>
+              <div class="page_name"><a href="../about/about.html#mission_Wrapper">Our Mission</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item_wrapper">
+              <h4 class="pageTitle"><a href="../event/event.html">Event</a></h4>
+              <div class="page_name"><a href="../event/event.html#event_wrapper">Annual Event</a></div>
+              <div class="page_name"><a href="../event/event.html#report_Wrapper">Annual Report</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item_wrapper">
+              <h4 class="pageTitle"><a href="../contact/contact.html">Contact us</a></h4>
+              <div class="page_name"><a href="../contact/contact.html#contact_wrapper">Contact form</a></div>
+              <div class="page_name"><a href="../contact/contact.html#faq_wrapper">FAQ</a></div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="item_wrapper sns_wrapper">
+              <h4>Follow us</h4>
+              <div class="snsImg_wrapper">
+                <img src="./assets_event/facebook-square-brands.png" alt="">
+                <img src="./assets_event/instagram-square-brands.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="copyright">&copy;2022 Sprites & Selkies Daycare. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+
+    
+</body>
+
+<script src="./js/script.js"></script>
+
+
+<!-- Google map -->
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_Yg3kI8RXdsNvvaNSRQ4MPNQHoFFGCJw&callback=initMap">
+</script>
+
+</html>

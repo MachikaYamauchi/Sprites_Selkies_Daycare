@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vanarts STUDENT MOCK PROJECT SITE</title>
+
+    <link rel="icon" 
+  type="image/png" 
+  href="./assets_programs/favcon.png">
+
+  <!-- css-------------------------------------------------------------------------------------------- -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css_programs/style.css">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/95b58ad2f6.js" crossorigin="anonymous"></script>
+
+
+
+  <!-- JS -------------------------------------------------------------------------------------------- -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  
+
+  <!-- Google map -->
+  <script type="text/javascript">
+
+    function initMap()
+    {
+      // 1.Defining my lat lang coordinates
+      var mylocation = {
+        lat: 49.272450,
+        lng: -123.095710
+      }
+
+      // 2.Define your map
+      var map = new google.maps.Map(document.getElementById("google-map"), {
+        zoom: 15,
+        center: mylocation
+      });
+
+      // 3.Plot your marker
+      var marker = new google.maps.Marker({
+        position: mylocation,
+        map: map
+      })
+    }
+
+  </script>
+
+</head>
+
+
+
+<body>
+  <div id="home">
+    <header class="page_header"><!-- wrapper -->
+      <nav class="navbar navbar-expand-md wrapper">
+          <div class="container-fluid p-0">
+              <a class="navbar-brand" href="../index.html"><img class="logo" src="assets_programs/logo.svg" alt="Sprites & Selkies Daycare"></a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav main_nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html#covid_container">Covid19 protocol</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../programs/programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../event/event.html">Event</a>
+                    </li>
+                    <li class="nav-item contact_bg">
+                      <a class="nav-link " href="../contact/contact.html">Contact us</a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+  </div><!-- / home -->
+
+  <!-- Hero Image ---------------------------------------------------------------------------------------------- -->
+  <div id="hero_home">
+    <div class="hero_homeContent wrapper">
+      <h2>Our Programs</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore autem nulla voluptates magni repellendus.
+      </p>
+    </div>
+  </div>
+
+  <!-- Early education -------------------------------------------------------------------------------------------------- -->
+  <section id="education_Wrapper">
+    <div class="wrapper">
+      <div class="education_h2 fadeUpTrigger">
+        <h2>Early education</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 flipLeftTopTrigger">
+            <div class="education_content">
+              <div class="education_img1"></div>
+              <h4>Toddlers(18-23months)</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                <br>
+                <br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 flipLeftTopTrigger">
+            <div class="education_content">
+              <div class="education_img2"></div>
+              <h4>Preschoolers(2-4 years)</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                <br>
+                <br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 flipLeftTopTrigger">
+            <div class="education_content">
+              <div class="education_img3"></div>
+              <h4>school-age(5-6 years)</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                <br>
+                <br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Morinig Program ！注意スマ版からの記述になっている。desktop,tabletはmediaクエリを使用中------------------------------------------------------------------------------------------- -->
+  <section id="morning_Wrapper">
+    <div class="morning_h2 zoomInTrigger">
+      <h2>Morning Programs<span> (All day program/AM)</span></h2>
+    </div>
+    <div class="mornig_text zoomInTrigger">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      </p>
+    </div>
+    <div class="timeline_container">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline_content">
+              <h3 class="time">7:30 - 9:00</h3>
+              <h2>Coming to school</h2>
+              <div class="img_text_wrapper">
+                <div class="morning_img1"></div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline_content ">
+              <h3 class="time">9:00 - 10:00</h3>
+              <h2>Coming to school</h2>
+              <div class="img_text_wrapper">
+                <div class="morning_img2"></div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline_content">
+              <h3 class="time">10:00 - 11:00</h3>
+              <h2>Coming to school</h2>
+              <div class="img_text_wrapper">
+                <div class="morning_img3"></div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline_content">
+              <h3 class="time">11:00 - 12:00</h3>
+              <h2>Coming to school</h2>
+              <div class="img_text_wrapper">
+                <div class="morning_img4"></div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Afternoon Program　！注意スマ版からの記述になっている。desktop,tabletはmediaクエリを使用中--------------------------------------------------------------------------------- -->
+
+  <section id="afternoon_Wrapper" >
+    <div class="afternoon_h2 zoomInTrigger">
+      <h2>Afternoon Programs<span> (All day program(PM))</span></h2>
+    </div>
+    <div class="afternoon_text zoomInTrigger">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      </p>
+    </div>
+    <div class="timeline_container">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline_content">
+              <h3 class="time">12:00 - 13:00</h3>
+              <h2>Coming to school</h2>
+              <div class="img_text_wrapper">
+                <div class="afternoon_img1"></div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline_content">
+              <h3 class="time">13:00 - 14:00</h3>
+              <h2>Coming to school</h2>
+              <div class="img_text_wrapper">
+                <div class="afternoon_img2"></div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline_content">
+              <h3 class="time">14:00 - 15:00</h3>
+              <h2>Coming to school</h2>
+              <div class="img_text_wrapper">
+                <div class="afternoon_img3"></div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline_content">
+              <h3 class="time">15:00 - 16:00</h3>
+              <h2>Coming to school</h2>
+              <div class="img_text_wrapper">
+                <div class="afternoon_img4"></div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Insert Pictures -------------------------------------------------------------------------------------------------- -->
+  <section id="pictures_Wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 d-none d-md-block p-0">
+          <div class="picture_img1"></div>
+        </div>
+        <div class="col-md-3 d-none d-md-block p-0">
+          <div class="picture_img2"></div>
+        </div>
+        <div class="col-md-3 d-none d-md-block p-0">
+          <div class="picture_img3"></div>
+        </div>
+        <div class="col-md-3 d-none d-md-block p-0">
+          <div class="picture_img4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Fee & values -------------------------------------------------------------------------------------------------- -->
+  <section id="fee_values_wrapper">
+    <div class="wrapper">
+      <div class="fee_values_h2">
+        <h2>Fees & Values</h2>
+      </div>
+      <div class="fee_values_text">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col">
+            <div class="morning_content zoomInTrigger">
+              <div class="circle_up">
+                <div class="program_name">
+                  <h4>Morning program</h4>
+                </div>
+              </div>
+              <div class="circle_down">
+                <div class="fee">
+                  <p>$7,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="afternoon_content zoomInTrigger">
+              <div class="circle_up">
+                <div class="program_name">
+                  <h4>Afternoon program</h4>
+                </div>
+              </div>
+              <div class="circle_down">
+                <div class="fee">
+                  <p>$7,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="allDay_content zoomInTrigger">
+              <div class="circle_up">
+                <div class="program_name">
+                  <h4>All day program</h4>
+                </div>
+              </div>
+              <div class="circle_down">
+                <div class="fee">
+                  <p>$14,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="advice fadeUpTrigger">
+        <div class="advice_title">
+          <h3>Do you want to get an advice for your child care?</h3>
+        </div>
+        <div class="advice_text">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+        </div>
+        <div class="advice_btn">
+          <a href="../contact/contact.html" class="shine">Contact us</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Process -------------------------------------------------------------------------------------------------- -->
+  <section id="Process_wrapper">
+    <div class="wrapper">
+      <div class="fee_values_h2">
+        <h2>Process of registration of Programs</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 fadeUpTrigger">
+            <div class="process_container">
+              <div class="crown">
+                <div class="crown_img1"></div>
+              </div>
+              <div class="process_title">
+                <h4>Please contact us</h4>
+              </div>
+              <div class="process_icon">
+                <div class="icon_img1"></div>
+              </div>
+              <div class="process_text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 fadeUpTrigger">
+            <div class="process_container">
+              <div class="crown">
+                <div class="crown_img2"></div>
+              </div>
+              <div class="process_title">
+                <h4>Making appointment</h4>
+              </div>
+              <div class="process_icon">
+                <div class="icon_img2"></div>
+              </div>
+              <div class="process_text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 fadeUpTrigger">
+            <div class="process_container">
+              <div class="crown">
+                <div class="crown_img3"></div>
+              </div>
+              <div class="process_title">
+                <h4>Visit and view our facility</h4>
+              </div>
+              <div class="process_icon">
+                <div class="icon_img3"></div>
+              </div>
+              <div class="process_text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Queation -------------------------------------------------------------------------------------------------- -->
+ <section id="question_Wrapper">
+  <div class="question_h2 zoomInTrigger">
+    <h2>Do you have any questions?</h2>
+  </div>
+  <div class="question_text zoomInTrigger">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    </p>
+  </div>
+  <div class="question_btn zoomInTrigger">
+    <a href="../contact/contact.html#faq_wrapper" class="shine">Go to FAQ</a>
+  </div>
+ </section>
+  
+
+  <!-- Contact -------------------------------------------------------------------------------------------------- -->
+  <section id="contact_Wrapper">
+    <div class="contact_h2 fadeUpTrigger">
+      <h2>Contact Us<img class="exclamation" src="./assets_programs/exclamation.png" alt=""><img class="exclamation" src="./assets_programs/exclamation.png" alt=""></h2>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 fadeUpTrigger">
+            <div class="contact_info">
+              <p>
+                <img class="crown" src="./assets_programs/crown.svg" alt="">Hours : Monday - Friday (7:30 - 16:00)
+              </p>
+              <p>
+                <img class="crown" src="./assets_programs/crown.svg" alt="">Closed : Saturday - Sunday
+              </p>
+              <p>
+                <img class="crown" src="./assets_programs/crown.svg" alt="">Phone Number : 111-222-3333
+              </p>
+              <p>
+                <img class="crown" src="./assets_programs/crown.svg" alt="">Email : dammy@dammy.com
+              </p>
+              <p>
+                <img class="crown" src="./assets_programs/crown.svg" alt="">Adress : 400-333 Terminal Avenue,Vancouver, BC Canada V6A 4C1
+              </p>
+            </div>
+            <div class="btn_wrapper">
+              <a href="../contact/contact.html" class="shine">Contact us</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 fadeUpTrigger">
+            <section class="map">
+              <div id ="google-map"></div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    
+  <!-- Footer -------------------------------------------------------------------------------------------------- -->
+  <footer id="footer_Wrapper">
+    <div class="wrapper">
+      <div class="logo_wrapper">
+        <a href="../index.html"><img class="logo" src="./assets_programs/logo.svg" alt="Sprites & Selkies Daycare"></a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item_wrapper">
+              <h4 class="pageTitle"><a href="./programs.html">Programs</a></h4>
+              <div class="page_name"><a href="./programs.html#education_Wrapper">Early Education</a></div>
+              <div class="page_name"><a href="./programs.html#morning_Wrapper">Morning Programs<br>(All day program/AM)</a></div>
+              <div class="page_name"><a href="./programs.html#afternoon_Wrapper">Afternoon Programs<br>(All day program/PM)</a></div>
+              <div class="page_name"><a href="./programs.html#fee_values_wrapper">Fees & Values</a></div>
+              <div class="page_name"><a href="./programs.html#Process_wrapper">Pcosecc of registration of Programs</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item_wrapper about">
+              <h4 class="pageTitle"><a href="../about/about.html">About</a></h4>
+              <div class="page_name"><a href="../about/about.html#staff_Wrapper">Our Staff</a></div>
+              <div class="page_name"><a href="../about/about.html#history_Wrapper">History</a></div>
+              <div class="page_name"><a href="../about/about.html#mission_Wrapper">Our Mission</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item_wrapper">
+              <h4 class="pageTitle"><a href="../event/event.html">Event</a></h4>
+              <div class="page_name"><a href="../event/event.html#event_wrapper">Annual Event</a></div>
+              <div class="page_name"><a href="../event/event.html#report_Wrapper">Annual Report</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item_wrapper">
+              <h4 class="pageTitle"><a href="../contact/contact.html">Contact us</a></h4>
+              <div class="page_name"><a href="../contact/contact.html#contact_wrapper">Contact form</a></div>
+              <div class="page_name"><a href="../contact/contact.html#faq_wrapper">FAQ</a></div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="item_wrapper sns_wrapper">
+              <h4>Follow us</h4>
+              <div class="snsImg_wrapper">
+                <img src="./assets_programs/facebook-square-brands.png" alt="">
+                <img src="./assets_programs/instagram-square-brands.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="copyright">&copy;2022 Sprites & Selkies Daycare. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+    
+</body>
+<script src="./js/script.js"></script>
+
+
+<!-- Google map -->
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_Yg3kI8RXdsNvvaNSRQ4MPNQHoFFGCJw&callback=initMap">
+</script>
+
+</html>
